@@ -108,6 +108,7 @@ dependencies {
     debugImplementation(compose.uiTooling)
     debugImplementation(compose.preview)
     debugImplementation(compose.ui)
+    debugImplementation(libs.androidx.compose.preview)
 }
 
 

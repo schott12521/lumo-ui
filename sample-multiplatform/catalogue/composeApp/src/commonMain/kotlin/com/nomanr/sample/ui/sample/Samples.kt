@@ -26,6 +26,7 @@ import com.nomanr.sample.ui.sample.ComponentId.TEXT_FIELD
 import com.nomanr.sample.ui.sample.ComponentId.TOOLTIP
 import com.nomanr.sample.ui.sample.ComponentId.TOP_BAR
 import com.nomanr.sample.ui.sample.samples.AccordionSample
+import com.nomanr.sample.ui.sample.samples.AlertDialogSample
 //import com.nomanr.sample.ui.sample.samples.AlertDialogSample
 import com.nomanr.sample.ui.sample.samples.BadgeSample
 import com.nomanr.sample.ui.sample.samples.ButtonSample
@@ -47,6 +48,7 @@ import com.nomanr.sample.ui.sample.samples.SurfaceSample
 import com.nomanr.sample.ui.sample.samples.SwitchSample
 import com.nomanr.sample.ui.sample.samples.TextFieldSample
 import com.nomanr.sample.ui.sample.samples.TextSample
+import com.nomanr.sample.ui.sample.samples.TooltipSample
 import com.nomanr.sample.ui.sample.samples.TopBarSample
 import kotlinx.serialization.Serializable
 
@@ -135,7 +137,7 @@ object Samples {
             TOP_BAR to { navigateUp -> TopBarSample(navigateUp) },
             ACCORDION to { AccordionSample() },
             TEXT_FIELD to { TextFieldSample() },
-//            ALERT_DIALOG to { AlertDialogSample() },
+            ALERT_DIALOG to { AlertDialogSample() },
             BADGE to { navigateUp -> BadgeSample(navigateUp) },
 //            MODAL_BOTTOM_SHEET to { ModalBottomSheetSample() },
             NAVIGATION_BAR to { navigateUp -> NavigationBarSample(navigateUp) },
@@ -147,7 +149,7 @@ object Samples {
             SCAFFOLD to { navigateUp -> ScaffoldSample(navigateUp) },
             SURFACE to { SurfaceSample() },
             SWITCH to { SwitchSample() },
-//            TOOLTIP to { TooltipSample() }
+            TOOLTIP to { TooltipSample() }
         )
 
     fun hasComponent(componentName: String): Boolean {
